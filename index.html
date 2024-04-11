@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
+       
+
+        <title>Cuadratic Equation</title>
+    </head>
+
+    <body onload="solve();">
+        <h1>Cuadratic Equations</h1>
+        <p>Add the values of a, b and c to know the value of x in the cuadratic equation and see how this value change</p>
+
+        
+
+        <label for="aVariable"></label>
+        <input type="number" id="aVariable" placeholder="Insert Variable a"> x<sup>2</sup> + 
+                
+        
+        <label for="bVariable"></label>
+        <input type="number" id="bVariable" placeholder="Insert Variable b"> * x +        
+
+        <label for="cVariable"></label>
+        <input type="number" id="cVariable" placeholder="Insert Variable c"> = 0 
+
+        <button id="submit">Solve</button>
+        
+    
+
+        <section id="plotSettings">
+
+        <p>HACER LA GRAFICA DE LA FUNCION CUADRATICA</p>
+
+        <p></p>
+
+        <h3>Coordinate values</h3>
+
+        <label for="xMax">xMax:</label>
+        <input type="number" id="xMax"  value="10" step="0.5" oninput="solve();">
+
+        <p></p>
+        
+        <label for="xMin">xMin:</label>
+        <input type="number" id="xMin"  value="-10" step="0.5" oninput="solve();">
+
+        <p></p>
+
+        <label for="yMax">yMax:</label>
+        <input type="number" id="yMax" value="10" step="0.5" oninput="solve();">
+
+        <p></p>
+
+        <label for="yMin">yMin:</label>
+        <input type="number" id="yMin" value="-10" step="0.5" oninput="solve();">
+
+        <p>Solution</p>
+
+        <div>
+            <p id="discriminant"></p>
+            <p id="firstSolution"></p>
+            <p id="secondSolution"></p>
+            <p id="noSolution"></p>
+            <p id="firstSolutionY"></p>
+            <p id="secondSolutionY"></p>
+        </div> 
+
+    </section>
+
+        <section id="plot">
+
+            <div id="myFunction"></div>
+           
+        </section>
+          
+        
+        <script src="script.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,42 @@
+#plot{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 700px;
+    height: 520px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.607);
+    background-color: white;
+    position: absolute;
+    left:42%;
+    top:23%;
+  
+}
+
+#plot:hover,
+#plot:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+#plotSettings{
+    color:#052936;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 260px;
+    height: 520px;
+    padding: 20px;
+    margin-right:20px;
+    box-shadow: 10px 10px 10px grey;
+    background-color: white;
+    position: absolute;
+    left:20%;
+    top:23%;
+    
+}
+
+#plotSettings:hover,
+#plotSettings:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+
+}
